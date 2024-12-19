@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Starbucks at Home</h1>
-   
-    <p> this webstie was built for you, made by starbucks lovers just like yourself, to have the comfort of coffee right from youre home</h2>
-    </body>
+  <h2 class="hr-lines">Suggestions</h2>
+  <div id="message"></div>
+  <iframe name="invisible" style="display:none;"></iframe>
+  <form action="https://formspree.io/f/xeoqwrzr" method="POST" target="invisible">
+    <label for="email">Email:</label>
+    <input type="text" name="name" id="name" placeholder="name">
+    <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" />
+    <label for="message">Suggestions:</label>
+    <textarea name="message" id="suggestions" placeholder="text" cols="10" rows="5"></textarea>
+    <button type="submit" onclick="submitClicked()">Submit</button>
+  </form>
+  <script src="about.js"></script>
+  <!-- <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/xeoqwrzr",
+    title: "How can we help?",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script> -->
+</body>
+
 </html>
